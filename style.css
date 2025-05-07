@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lucida Bright;
+}
+
+
+.container {
+    position: relative;
+    max-width: 1000px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; /* atau 100% jika ingin mengisi seluruh ruang yang tersedia */
+    margin: 0; /* menghilangkan margin default */
+  }
+  
+.content {
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+.header{
+    color: rgb(223, 23, 23);
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    margin-bottom: 25px;
+    margin-top: 100PX;
+}
+.description{
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Lucida Sans;
+}
+.timer{
+    width: 70%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.sub_timer{
+    width: 220px;
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.digit{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 70px;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.digit_name{
+    color: #000;
+    background: #fff;
+    text-align: center;
+    padding: 0.6rem 0;
+    font-size: 20px;
+}

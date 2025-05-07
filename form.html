@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="styleform.css">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            window.location.href = 'timer.html';
+        }
+    </script>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('background.png');
+        }
+    </style> 
+    <div class="countdown-container">
+        <h1>Form Pendaftaran</h1>
+        <form id="registrationForm" onsubmit="handleSubmit(event)">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="nisn">Nisn:</label>
+            <input type="text" id="nisn" name="nisn" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+</body>
+</html>

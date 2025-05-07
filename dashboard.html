@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+  color: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}  
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Sesuaikan dengan tinggi navbar */
+  background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan transparansi */
+  z-index: -1; /* Menempatkan di belakang navbar */
+}
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 30%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ff9f21;
+}
+
+.navbar a.active {
+  background-color: #ff9c07;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("school.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(219, 255, 18);
+}
+.my-paragraph {
+    font-size: 14px;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #f8fc14;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.oval-button {
+  border-radius: 50rem;
+  color: white; /* Contoh warna teks */
+  border: none; /* Menghilangkan border default */
+  cursor: pointer; /* Mengubah kursor saat diarahkan */
+}
+
+</style>
+</head>
+<body>
+    <header>
+      <nav class="navbar"> <center>
+      <li><a class="active" href="#"><font face="TIMES NEW ROMAN size="10" color="white"> Home</button></li></a>
+      <li><a href="#"><font face="TIMES NEW ROMAN size="10" color="WHITE"> Search</button></li></a>
+      <li><a href="#"><font face="TIMES NEW ROMAN size="10" color="WHITE"> Contact</button></li></a>
+    </center>
+  </nav>
+  </header>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <img src="logo.png" alt="logo" width="150" height="150">
+    <font face="ARIAL BLACK" size="15" color="WHITE"> 
+    <p> Selamat Datang di SMKN 10 PINRANG </p>
+    <p class="my-paragraph" > <marquee direction='left'> Jln. Poros Labolong - Cempa, Desa Siparappe, Kecamatan Watang Sawitto, Kabupaten Pinrang</marquee> </p>
+    <a href="form.html" style="text-decoration: none;">
+        <button class="oval-button">Klik Saya</button>
+      </button>
+    
+  </body>
+  </div>
+</div>
